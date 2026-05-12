@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piyush Kumar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav id="navbar">
+    <div class="nav-logo">&lt;PK /&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hey there, I'm</p>
+      <h1 class="hero-name">Piyush Kumar</h1>
+      <div class="hero-typewriter">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-sub">CS undergrad @ BMS College of Engineering · CGPA 9.383</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/KrPIYUSH007" target="_blank" class="social-link">GitHub</a>
+        <a href="https://linkedin.com/in/piyush-kumar-2a09a2250" target="_blank" class="social-link">LinkedIn</a>
+        <a href="mailto:piyushkumararya8521@gmail.com" class="social-link">Email</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">piyush.js</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">const</span> <span class="var">piyush</span> = {
+  <span class="key">role</span>: <span class="str">"Full-Stack Dev"</span>,
+  <span class="key">stack</span>: [<span class="str">"React"</span>, <span class="str">"Node.js"</span>,
+          <span class="str">"Supabase"</span>, <span class="str">"Python"</span>],
+  <span class="key">cgpa</span>: <span class="num">9.383</span>,
+  <span class="key">status</span>: <span class="str">"Building cool stuff"</span>,
+  <span class="key">coffee</span>: <span class="num">Infinity</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a Computer Science undergrad at BMS College of Engineering, Bengaluru, with a passion for building full-stack web applications and exploring AI/ML systems.</p>
+          <p>I love turning ideas into real products — from crafting clean UIs to designing scalable backends. When I'm not coding, I'm probably reading about distributed systems or brewing coffee.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">9.383</span><span class="stat-label">CGPA</span></div>
+            <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Projects</span></div>
+            <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Technologies</span></div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="terminal">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title">terminal</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">~$</span> whoami</p>
+              <p class="output">piyush-kumar</p>
+              <p><span class="prompt">~$</span> cat interests.txt</p>
+              <p class="output">Full-Stack Dev, AI/ML, Open Source</p>
+              <p><span class="prompt">~$</span> echo $LOCATION</p>
+              <p class="output">Bengaluru, India</p>
+              <p><span class="prompt">~$</span> <span class="blink-cursor">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag">React</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Database &amp; Cloud</h3>
+          <div class="skill-tags">
+            <span class="tag">Supabase</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools &amp; Others</h3>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Linux</span>
+            <span class="tag">C/C++</span>
+            <span class="tag">DSA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🎓</span>
+            <a href="https://www.officialunisync.ac.in" target="_blank" class="icon-link">Live ↗</a>
+          </div>
+          <h3>UniSync</h3>
+          <p>A unified platform for college students to sync schedules, assignments, and campus resources in one place.</p>
+          <div class="project-tags">
+            <span class="tag small">React</span>
+            <span class="tag small">Node.js</span>
+            <span class="tag small">Supabase</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-icon">�</span>
+            <a href="https://calority.vercel.app" target="_blank" class="icon-link">Live ↗</a>
+          </div>
+          <h3>Calority</h3>
+          <p>A calorie and nutrition tracker that helps users log meals, monitor daily intake, and hit their health goals.</p>
+          <div class="project-tags">
+            <span class="tag small">React</span>
+            <span class="tag small">Python</span>
+            <span class="tag small">FastAPI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 – Present</span>
+            <h3>Full-Stack Developer Intern</h3>
+            <p class="timeline-company">Startup / Freelance</p>
+            <p>Built and deployed web applications for clients, handling everything from UI design to backend APIs and database design.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 – 2024</span>
+            <h3>Open Source Contributor</h3>
+            <p class="timeline-company">Various Projects</p>
+            <p>Contributed to open source projects, fixing bugs and adding features in React and Node.js ecosystems.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 – Present</span>
+            <h3>B.E. Computer Science</h3>
+            <p class="timeline-company">BMS College of Engineering, Bengaluru</p>
+            <p>Pursuing Computer Science with a CGPA of 9.383. Active in coding clubs and hackathons.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact-sub">I'm open to internships, collaborations, and interesting projects. Drop a message!</p>
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <a href="mailto:piyushkumararya8521@gmail.com" class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span>piyushkumararya8521@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/piyush-kumar-2a09a2250" target="_blank" class="contact-item">
+            <span class="contact-icon">💼</span>
+            <span>linkedin.com/in/piyush-kumar-2a09a2250</span>
+          </a>
+          <a href="https://github.com/KrPIYUSH007" target="_blank" class="contact-item">
+            <span class="contact-icon">🐙</span>
+            <span>github.com/KrPIYUSH007</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed &amp; built by <span class="accent">Piyush Kumar</span> · 2024</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
