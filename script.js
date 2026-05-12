@@ -91,17 +91,42 @@ document.querySelectorAll('.project-card, .skill-category, .timeline-item, .abou
   observer.observe(el);
 });
 
-// ── Contact form ──
+// ── Contact form (EmailJS) ──
+emailjs.init('e9CBQGMFjTwS5-5va');
+
 document.getElementById('contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
   const btn = this.querySelector('button[type="submit"]');
-  btn.textContent = 'Sent ✓';
-  btn.style.background = '#28c840';
-  setTimeout(() => {
-    btn.textContent = 'Send Message';
-    btn.style.background = '';
-    this.reset();
-  }, 3000);
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  const params = {
+    from_name: document.getElementById('name').value,
+    email:     document.getElementById('email').value,
+    message:   document.getElementById('message').value,
+  };
+
+  emailjs.send('service_2bc16i9', 'template_fy6qowe', params)
+    .then(() => {
+      btn.textContent = 'Sent ✓';
+      btn.style.background = '#28c840';
+      this.reset();
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
+    })
+    .catch((err) => {
+      console.error('EmailJS error:', err);
+      btn.textContent = 'Failed — try again';
+      btn.style.background = '#ff5f57';
+      btn.disabled = false;
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.style.background = '';
+      }, 3000);
+    });
 });
 
 // ── Interactive Terminal ──
