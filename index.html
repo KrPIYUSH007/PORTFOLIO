@@ -76,19 +76,17 @@
           </div>
         </div>
         <div class="about-card">
-          <div class="terminal">
+          <div class="terminal" id="interactive-terminal">
             <div class="terminal-header">
               <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-              <span class="terminal-title">terminal</span>
+              <span class="terminal-title">piyush@portfolio ~ interactive</span>
             </div>
-            <div class="terminal-body">
-              <p><span class="prompt">~$</span> whoami</p>
-              <p class="output">piyush-kumar</p>
-              <p><span class="prompt">~$</span> cat interests.txt</p>
-              <p class="output">Full-Stack Dev, AI/ML, Open Source</p>
-              <p><span class="prompt">~$</span> echo $LOCATION</p>
-              <p class="output">Bengaluru, India</p>
-              <p><span class="prompt">~$</span> <span class="blink-cursor">_</span></p>
+            <div class="terminal-output" id="term-output">
+              <div class="term-line"><span class="term-accent">Welcome! Type <strong>help</strong> to see available commands.</span></div>
+            </div>
+            <div class="terminal-input-row">
+              <span class="prompt">~$</span>
+              <input type="text" id="term-input" class="term-input" autocomplete="off" spellcheck="false" placeholder="type a command..." aria-label="Terminal input" />
             </div>
           </div>
         </div>
@@ -187,28 +185,14 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="timeline-date">2024 – Present</span>
-            <h3>Full-Stack Developer Intern</h3>
-            <p class="timeline-company">Startup / Freelance</p>
-            <p>Built and deployed web applications for clients, handling everything from UI design to backend APIs and database design.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2023 – 2024</span>
-            <h3>Open Source Contributor</h3>
-            <p class="timeline-company">Various Projects</p>
-            <p>Contributed to open source projects, fixing bugs and adding features in React and Node.js ecosystems.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2022 – Present</span>
-            <h3>B.E. Computer Science</h3>
-            <p class="timeline-company">BMS College of Engineering, Bengaluru</p>
-            <p>Pursuing Computer Science with a CGPA of 9.383. Active in coding clubs and hackathons.</p>
+            <span class="timeline-date">Sept 2024 – Dec 2024</span>
+            <h3>Assistant Editor <span class="timeline-intern">(Intern)</span></h3>
+            <p class="timeline-company">StayWhizzy</p>
+            <ul class="timeline-bullets">
+              <li>Assisted the editorial team in creating, reviewing, and publishing content for StayWhizzy.</li>
+              <li>Supported content quality checks, proofreading, and coordination with writers to meet publication deadlines.</li>
+              <li>Gained exposure to content management workflows and digital publishing processes.</li>
+            </ul>
           </div>
         </div>
       </div>
